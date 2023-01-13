@@ -1,0 +1,54 @@
+import java.util.Scanner;
+
+
+public class Lab5_1{
+  //Constants
+  public static void main (String [] args){
+  
+//Declarations
+    
+    Scanner input = new Scanner (System.in);
+    char letter;
+    
+    
+    //Inputs
+    
+  
+    //Processing
+    
+    System.out.println("Enter a single letter and you will get the corresponding digit on the telephone:");
+    letter= input.next().charAt(0);
+    
+    
+    if (letter == ('A') || letter == ('B')|| letter== ('C') ) {
+          
+      System.out.println("The digit 2 corresponds to the letter " + letter);
+      
+    }else if (letter == ('D') || letter ==('E') || letter== ('F') ){
+      System.out.println("The digit 3 corresponds to the letter " + letter +".");
+    }else if (letter == ('G') || letter ==('H') || letter== ('I') ){
+      System.out.println("The digit 4 corresponds to the letter " + letter +".");
+    }else if (letter == ('J') || letter ==('K') || letter== ('L') ){
+      System.out.println("The digit 5 corresponds to the letter " + letter +".");
+    }else if (letter == ('M') || letter ==('N') || letter== ('O') ){
+      System.out.println("The digit 6 corresponds to the letter " + letter +".");
+    }else if (letter == ('P') || letter ==('R') || letter== ('S') ){
+      System.out.println("The digit 7 corresponds to the letter " + letter +".");
+    }else if (letter == ('T') || letter ==('U') || letter== ('V') ){
+      System.out.println("The digit 8 corresponds to the letter " + letter +".");
+    }else if (letter == ('W') || letter ==('X') || letter== ('Y') ){
+      System.out.println("The digit 9 corresponds to the letter " + letter +".");
+    }
+    else if (letter== ('Q') || letter== ('Z') ) {
+     System.out.println("There is no digit on the telephone that represents "+letter); 
+    }
+    else {
+      System.out.println("Please only enter an upper-case letter"); 
+    }
+      
+    
+    //Output
+   
+ 
+  }
+}

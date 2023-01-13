@@ -1,0 +1,27 @@
+public class Lab3_2{
+  //constant declarations
+  public static final double PI=3.14159265;
+  
+  public static void main (String [] args){
+    //declarations
+    
+    double diameter, price, size, price_sq_inch;
+    
+    //input
+    
+    diameter= 12;
+    price= 6.99;
+    
+    
+    //processing
+    
+    size = (PI * (diameter * diameter));
+    price_sq_inch= price / size;
+    
+    //output
+    
+    System.out.println(" The size of the pizza with a diameter of "+ diameter +" inches is "+ size +" square inches.");
+    System.out.println(" The price per square inch for the same pizza is "+ price_sq_inch);
+    
+  }
+}

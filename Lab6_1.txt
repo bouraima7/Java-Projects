@@ -1,0 +1,68 @@
+
+
+
+import java.util.Scanner;
+
+
+public class Lab6_1{
+  //Constants
+  public static void main (String [] args){
+  
+//Declarations
+    
+    Scanner input = new Scanner (System.in);
+    double test1_score, test2_score, final_score, assignments, total_score,avg,sum=0;
+    int studentId, count=0;
+    boolean flag;
+    //Inputs
+    flag=true;
+    
+    while (flag) {
+      System.out.println("Enter the student's Id:(0 to exit)");
+    studentId= input.nextInt();
+      if (studentId !=0){
+    
+    System.out.println("Enter the first test's score");
+    test1_score= input.nextDouble();
+    System.out.println("Enter the second test's score");
+    test2_score= input.nextDouble();
+    System.out.println("Enter the final test's score");
+    final_score= input.nextDouble();
+    System.out.println("Enter how many assignments");
+    assignments = input.nextDouble();
+ 
+
+//Processing
+    
+    total_score = (.15*test1_score) + (.15*test2_score) + (.40 * final_score) +(.30 * assignments); 
+    sum= sum+ total_score;
+    count++;
+    
+    //Output
+    System.out.printf("The student's total score is %.2f\n", total_score);
+    
+    
+    if (total_score >= 90){
+      System.out.println("The letter grade is A");
+    }else if (total_score >= 80){
+        System.out.println("The letter grade is B");
+    }else if (total_score >= 70){
+        System.out.println("The letter grade is C");
+    }else if (total_score >= 60){
+        System.out.println("The letter grade is D");
+    }else {
+        System.out.println("The letter grade is F");
+        
+    }
+      }//end of if for studentId conditional
+      
+      else {
+        flag= false;
+    }
+    }//end of while loop
+    avg= sum/count;
+    System.out.printf("The class average is %.2f\n", avg);
+    
+  }//end of main
+  
+}//end of class

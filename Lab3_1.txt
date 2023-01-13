@@ -1,0 +1,17 @@
+public class Lab3_1{
+  // This program is intended to find the perimeter and area of a rectangular field, given its length and width in yards
+  public static void main (String [] args){
+    // declarations
+    double x, y, z, a;
+    // Input
+    x= 12.25;
+    y= 5.82;
+    // Processing
+    z= 2 * (x+y);//perimeter
+    a = x * y;// area
+    //output
+    System.out.println ("The perimeter of the rectangle with the length = " + x +" yards and the width = "+ y +" yards is "+ z +" yards.");
+    System.out.println ("The area of the rectangle with the length = " + x +" yards and the width = "+ y +" yards is "+ a +" square yards.");
+    
+  }
+}

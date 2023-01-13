@@ -1,0 +1,28 @@
+public class Lab3_3{
+  //Constants
+  public static void main (String [] args){
+  // Declarations
+    int x, y, Mod, KeyInt;
+    double  KeyFlt;
+    
+    //Inputs
+    x= 23;
+    y= 5;
+   
+   
+    
+    
+    
+    //Processing
+   Mod = x % y;
+   KeyInt= x / y;
+   KeyFlt= (double) x / y;
+    
+    //Output
+  System.out.println("First number is "+ x +". Second number is "+ y +".");
+  System.out.println( x +" modulo " + y +" equals "+ Mod);
+  System.out.println( x +" divided by "+ y + " using integer division equals " + KeyInt);
+  System.out.println( x +" divided by " + y + " using floating point division equals "+ KeyFlt );
+  
+  }
+}

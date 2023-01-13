@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class Lab4_3{
+  //Constants
+  public static void main (String [] args){
+  // Declarations
+    int x, y, Mod, KeyInt;
+    double  KeyFlt;
+    Scanner input= new Scanner (System.in);
+    
+    //Inputs
+    
+    System.out.println("Enter the first number");
+    x= input.nextInt();
+    System.out.println("Enter the second number");
+    y= input.nextInt();
+   
+   
+    
+    
+    
+    //Processing
+   Mod = x % y;
+   KeyInt= x / y;
+   KeyFlt= (double) x / y;
+    
+    //Output
+  System.out.println("First number is "+ x +". Second number is "+ y +".");
+  System.out.println( x +" modulo " + y +" equals "+ Mod);
+  System.out.println( x +" divided by "+ y + " using integer division equals " + KeyInt);
+  System.out.printf( x +" divided by " + y + " using floating point division equals %.2f\n ", KeyFlt );
+ // System.out.printf("%.2f divided by %.2f using floating point division equals %.2f\n",x,y,KeyFlt);
+  
+  }
+}

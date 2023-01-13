@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class Lab4_2{
+  //constant declarations
+  public static final double PI=3.14159265;
+  
+  public static void main (String [] args){
+    //declarations
+    
+    double diameter, price, size, price_sq_inch;
+    Scanner input = new Scanner (System.in);
+    //input
+    System.out.println("Enter the diameter");
+    diameter= input.nextDouble();
+    System.out.println("Enter the price");
+    price= input.nextDouble();
+    
+    
+    //processing
+    
+    size = (PI * (diameter * diameter));
+    price_sq_inch= price / size;
+    
+    //output
+    
+    System.out.printf(" The size of the pizza with a diameter of %.2f inches is %.2f\n square inches.", diameter, size);
+    System.out.printf(" The price per square inch for the same pizza is %.2f\n", price_sq_inch);
+    
+  }
+}

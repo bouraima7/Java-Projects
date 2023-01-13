@@ -1,0 +1,37 @@
+
+
+
+import java.util.Scanner;
+
+
+public class Lab4_4{
+  //Constants
+  public static void main (String [] args){
+  
+//Declarations
+    
+    Scanner input = new Scanner (System.in);
+    double test1_score, test2_score, final_score, assignments, total_score;
+    
+    
+    //Inputs
+    
+    System.out.println("Enter the first test's score");
+    test1_score= input.nextDouble();
+    System.out.println("Enter the second test's score");
+    test2_score= input.nextDouble();
+    System.out.println("Enter the final test's score");
+    final_score= input.nextDouble();
+    System.out.println("Enter how many assignments");
+    assignments = input.nextDouble();
+    
+
+//Processing
+    
+    total_score = (.15*test1_score) + (.15*test2_score) + (.40 * final_score) +(.30 * assignments); 
+    
+    //Output
+    System.out.printf("The student's total score is %.2f\n", total_score);
+ 
+  }
+}

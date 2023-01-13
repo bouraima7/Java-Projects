@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class Lab4_1{
+  // This program is intended to find the perimeter and area of a rectangular field, given its length and width in yards
+  public static void main (String [] args){
+    // declarations
+    double x, y, z, a;
+    Scanner input= new Scanner (System.in);
+    // Input
+    
+    System.out.println("Enter the perimeter length of the rectangle in yards");
+    x= input.nextDouble();
+    System.out.println("Enter the width length of the rectangle in yards");
+    y= input.nextDouble();
+    // Processing
+    z= 2 * (x+y); //perimeter
+    a = x * y; // area
+    //output
+   // System.out.printf ("The perimeter of the rectangle with the length =%.2f\n ", x +" yards and the width =%.2f\n ", y +" yards is %.2f\n", z +" yards.");
+  //  System.out.printf ("The area of the rectangle with the length =%.2f\n " , x +" yards and the width =%.2f\n ", y +" yards is %.2f\n", a +" square yards.");
+    
+    System.out.printf(" The perimeter of the rectangle with the length = %.2f yards and the width = %.2f  yards is %.2f\n", x,y,z);
+    System.out.printf ("The area of the rectangle with the length =%.2f yards and the width =%.2f yards is %.2f\n square yards.", x,y,a);
+    
+  }
+}

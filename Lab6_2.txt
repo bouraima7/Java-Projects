@@ -1,0 +1,43 @@
+
+import java.util.Scanner;
+
+
+public class Lab6_2{
+  //Constants
+  public static void main (String [] args){
+  
+//Declarations
+    
+    Scanner input = new Scanner (System.in);
+    int num=1;
+    int counter=1;
+    int integer=1;
+    int fact=0;
+    char prompt;
+    
+//Processing
+    
+    
+//Output
+ System.out.println("Do you want to start(Y/N):");
+ prompt=input.next().charAt(0);
+ while (prompt == 'y' || prompt== 'Y'){
+  System.out.println("Enter an integer (1 -10):");
+  num= input.nextInt();
+  
+       if (num >=1 && num<=10){
+              while (num >= counter){
+   
+               fact= integer * counter;
+               counter++;
+               }
+       }
+  
+   System.out.println("ERROR! OUT OF RANGE (1 - 10). REENTER:"); 
+ }
+  
+  
+  
+  }//end of main
+  
+}//end of class
